@@ -28,5 +28,6 @@
 #include "pictureFlowWidget/ttkpictureflowwidgetproperty.h"
 #include "smoothMovingTableWidget/ttksmoothmovingtablewidgetproperty.h"
 #include "customPieWidget/ttkcustompiewidgetproperty.h"
+#include "customRingWidget/ttkcustomringwidgetproperty.h"
 
 #endif // TTKWIDGETINCLUDE_H

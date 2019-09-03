@@ -123,6 +123,8 @@ void TTKToolsApplication::labelModuleChanged(int index)
             break;
         case 13: w = new TTKTileBackgroundLabelProperty;
             break;
+        case 14: w = new TTKLightPointLabelProperty;
+            break;
         default:
             break;
     }
@@ -184,6 +186,8 @@ void TTKToolsApplication::meterModuleChanged(int index)
             break;
         case 11: w = new TTKPanelMeterWidgetProperty;
             break;
+        case 12: w = new TTKMiniMeterWidgetProperty;
+            break;
         default:
             break;
     }
@@ -224,6 +228,8 @@ void TTKToolsApplication::progressModuleChanged(int index)
         case 9: w = new TTKRoundProgressWidgetProperty;
             break;
         case 10: w = new TTKRingProgressWidgetProperty;
+            break;
+        case 11: w = new TTKWaveProgressWidgetProperty;
             break;
         default:
             break;
@@ -340,6 +346,8 @@ void TTKToolsApplication::widgetModuleChanged(int index)
             break;
         case 8: w = new TTKCustomPieWidgetProperty;
             break;
+        case 9: w = new TTKCustomRingWidgetProperty;
+            break;
         default:
             break;
     }
@@ -366,6 +374,10 @@ void TTKToolsApplication::windowModuleChanged(int index)
         case 2: w = new TTKMoveResizeWidgetProperty;
             break;
         case 3: w = new TTKMoveWidgetProperty;
+            break;
+        case 4: w = new TTKSplashScreenProperty;
+            break;
+        case 5: w = new TTKAnSplashScreenProperty;
             break;
         default:
             break;
@@ -417,6 +429,7 @@ void TTKToolsApplication::createLabelModule()
     widget->addItem(":/icon/label", "TTKCPUMemoryLabel");
     widget->addItem(":/icon/label", "TTKAntLineLabel");
     widget->addItem(":/icon/label", "TTKTileBackgroundLabel");
+    widget->addItem(":/icon/label", "TTKLightPointLabel");
 
     widget->setObjectName("labelRow");
     widget->setStyleSheet("#labelRow{background-color:rgba(255, 126, 0, 50)}");
@@ -455,6 +468,7 @@ void TTKToolsApplication::createMeterModule()
     widget->addItem(":/icon/meter", "TTKPercentMeterWidget");
     widget->addItem(":/icon/meter", "TTKArcMeterWidget");
     widget->addItem(":/icon/meter", "TTKPanelMeterWidget");
+    widget->addItem(":/icon/meter", "TTKMiniMeterWidget");
 
     widget->setObjectName("meterRow");
     widget->setStyleSheet("#meterRow{background-color:rgba(0, 255, 0, 50)}");
@@ -478,6 +492,7 @@ void TTKToolsApplication::createProgressModule()
     widget->addItem(":/icon/progress", "TTKRingsProgressWidget");
     widget->addItem(":/icon/progress", "TTKRoundProgressWidget");
     widget->addItem(":/icon/progress", "TTKRingProgressWidget");
+    widget->addItem(":/icon/progress", "TTKWaveProgressWidget");
 
     widget->setObjectName("progressRow");
     widget->setStyleSheet("#progressRow{background-color:rgba(0, 0, 255, 50)}");
@@ -543,6 +558,7 @@ void TTKToolsApplication::createWidgetModule()
     widget->addItem(":/icon/widget", "TTKPictureFlowWidget");
     widget->addItem(":/icon/widget", "TTKSmoothMovingTableWidget");
     widget->addItem(":/icon/widget", "TTKCustomPieWidget");
+    widget->addItem(":/icon/widget", "TTKCustomRingWidget");
 
     widget->setObjectName("widgetRow");
     widget->setStyleSheet("#widgetRow{background-color:rgba(18, 35, 52, 50)}");
@@ -559,6 +575,8 @@ void TTKToolsApplication::createWindowModule()
     widget->addItem(":/icon/window", "TTKMoveDialog");
     widget->addItem(":/icon/window", "TTKMoveResizeWidget");
     widget->addItem(":/icon/window", "TTKMoveWidget");
+    widget->addItem(":/icon/window", "TTKSplashScreen");
+    widget->addItem(":/icon/window", "TTKAnSplashScreen");
 
     widget->setObjectName("windowRow");
     widget->setStyleSheet("#windowRow{background-color:rgba(255, 255, 255, 50)}");

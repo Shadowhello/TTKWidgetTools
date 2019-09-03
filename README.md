@@ -24,6 +24,7 @@ Button
 | Button | TTKRadioButtonWidget |   完成   |
 | Button | TTKToggleWidget |   完成   |
 | Button | TTKToolMenuWidget |   完成   |
+| Button | TTKColorButtonWidget |   完成   |
 
 Label
 ----
@@ -43,6 +44,7 @@ Label
 | Label | TTKCPUMemoryLabel |   完成   |
 | Label | TTKAntLineLabel |   完成   |
 | Label | TTKTileBackgroundLabel |   完成   |
+| Label | TTKLightPointLabel |   完成   |
 
 LineEdit
 ----
@@ -66,6 +68,8 @@ Meter
 | Meter | TTKProgressMeterWidget |   完成   |
 | Meter | TTKPercentMeterWidget |   完成   |
 | Meter | TTKArcMeterWidget |   完成   |
+| Meter | TTKPanelMeterWidget |   完成   |
+| Meter | TTKMiniMeterWidget |   完成   |
 
 Progress
 ----
@@ -81,6 +85,7 @@ Progress
 | Progress | TTKRingsProgressWidget |   完成   |
 | Progress | TTKRoundProgressWidget |   完成   |
 | Progress | TTKRingProgressWidget |   完成   |
+| Progress | TTKWaveProgressWidget |   完成   |
 
 Slider
 ----
@@ -114,6 +119,7 @@ Widget
 | Widget | TTKPictureFlowWidget |   完成   |
 | Widget | TTKSmoothMovingTableWidget |   完成   |
 | Widget | TTKCustomPieWidget |   完成   |
+| Widget | TTKCustomRingWidget |   完成   |
 
 Window
 ----
@@ -123,6 +129,9 @@ Window
 | Window | TTKMoveDialog |   完成   |
 | Window | TTKMoveResizeWidget |   完成   |
 | Window | TTKMoveWidget |   完成   |
+| Window | TTKSplashScreen |   完成   |
+| Window | TTKAnSplashScreen |   完成   |
+
 
 Screenshots
 ----
